@@ -1,0 +1,14 @@
+body {
+  align-items: center;
+  align-content: center;
+  margin: auto;
+  padding: auto;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+a{
+  text-decoration: none;
+  color: white;
+  font-size: large;
+}

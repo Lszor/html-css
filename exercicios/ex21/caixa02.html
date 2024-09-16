@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grouping Tags</title>
+</head>
+<style>
+  body {
+    background-color: rgb(107, 107, 107);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+  }
+
+  header {
+    background-color: rgb(253, 253, 253);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.37);
+  }
+
+  nav {
+    background-color: rgb(78, 78, 78);
+    padding: 2px;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.37);
+
+  }
+
+  nav>a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    margin-right: 30px;
+  }
+
+  nav>a:hover {
+    text-decoration: underline;
+  }
+
+  main {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.37);
+    border-radius: 10px;
+    border-color: rgba(0, 0, 0, 0);
+    border-style: solid;
+  }
+
+  article {
+    margin: 5px;
+    padding: 5px;
+    background-color: rgba(202, 202, 202, 0.459);
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.37);
+    border-radius: 10px 0px;
+    border-color: rgba(0, 0, 0, 0);
+    border-style: solid;
+  }
+
+  article>aside {
+    background-color: rgba(112, 112, 112, 0.315);
+  }
+
+  footer {
+    margin: 0px;
+    padding: 4px;
+    text-align: center;
+    background-color: black;
+    color: white;
+  }
+
+  footer>p {
+    margin: 0px;
+  }
+</style>
+
+<body>
+  <header>
+    <h1>Meu site</h1>
+    <nav>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+    </nav>
+  </header>
+  <main>
+    <section id="assuntos">
+      <p>Tecnologia Eventos Games</p>
+    </section>
+    <section id="noticias">
+      <article id="noticia1">
+        <h2>Noticia Brasil</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, labore aliquid ratione harum quas
+          molestias optio totam in voluptatibus perspiciatis repellendus dolorem amet dolores? Reiciendis distinctio
+          voluptatibus facilis consequuntur ad!</p>
+      </article>
+      <article id="noticia2">
+        <h2>Noticia sobre japao</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo sunt iste aut minus eaque et dolores eius!
+          Animi, ad. Temporibus voluptas delectus velit hic quasi, adipisci expedita deserunt odit totam!</p>
+        <aside>
+          <p>Artigo feito por Lucas</p>
+        </aside>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <p>Desenvolvido por <em>&copy; Lucas</em></p>
+  </footer>
+</body>
+
+</html>
