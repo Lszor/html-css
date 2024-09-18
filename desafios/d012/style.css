@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
+
+:root {
+  --fonte-padrao: "Playpen Sans", cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+header {
+  background-color: black;
+  color: white;
+  font-family: var(--fonte-padrao);
+  text-align: center;
+  padding: 50px;
+}
+
+header h1 {
+  font-weight: bolder;
+  font-size: 6vw;
+}
+
+header p {
+  font-weight: lighter;
+}
+
+header a {
+  font-weight: bolder;
+  text-decoration: none;
+  color: white;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+main p {
+  text-align: left;
+  font-family: var(--fonte-padrao);
+  font-size: 3vw;
+  padding: 3vh 5vw;
+}
+
+section {
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+} 
+
+section.with-background {
+  background-position: right center;
+  background-attachment: fixed;
+  background-size: cover;
+  box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.384);
+}
+
+section#img1 {
+  background-image: url('imagens/background001.jpg');
+}
+
+section#img2 {
+  background-image: url('imagens/background002.jpg');
+}
+
+section.with-background p {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.342);
+  display: inline-block;
+  border-radius: 0px 20px 20px 0;
+}
+
+footer {
+  padding: 20px;
+  background-color: black;
+  color: white;
+  text-align: center;
+
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: bolder;
+  color: white;
+  padding-left: 3px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
