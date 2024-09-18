@@ -7,6 +7,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-size: 1em;
 }
 
 body {
@@ -24,6 +25,7 @@ header {
 
 header h1 {
   font-weight: bolder;
+  /* utilizando "vw" sem media query para fins de estudo */
   font-size: 6vw;
   font-variant: small-caps;
 }
@@ -42,20 +44,24 @@ header a:hover {
   text-decoration: underline;
 }
 
-main p {
+section {
   text-align: left;
   font-family: var(--fonte-padrao);
+  /* utilizando "vw" e "vh" sem media query para fins de estudo */
   font-size: 3vw;
-  padding: 3vh 5vw;
+  line-height: 2em;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  padding-left: 30px;
 }
 
-section {
-  padding-top: 3vh;
-  padding-bottom: 3vh;
-} 
-section.normal{
-background-color: white;
-color: black;
+section p {
+  padding-bottom: 2em;
+}
+
+section.normal {
+  background-color: white;
+  color: black;
 }
 
 section.with-background {
@@ -69,9 +75,14 @@ section.with-background {
 
 section.with-background p {
   color: white;
-  background-color: rgba(0, 0, 0, 0.342);
+  background-color: rgba(0, 0, 0, 0.479);
   display: inline-block;
   border-radius: 0px 20px 20px 0;
+  padding-left: 30px;
+  margin-left: -30px;
+  padding-right: 20px;
+  padding-top: 10px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.514);
 }
 
 section#img1 {
@@ -81,6 +92,7 @@ section#img1 {
 section#img2 {
   background-image: url('imagens/background002.jpg');
 }
+
 footer {
   padding: 20px;
   background-color: black;
