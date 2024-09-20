@@ -4,8 +4,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tabelas</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      text-transform: capitalize;
+    }
+    table{
+      border-collapse: collapse;
+    }
+    caption{
+      font-weight: bolder;
+      font-size: 1.2em;
+      padding: 10px;
+    }
+    th, td{
+      padding: 10px;
+      border: 1px solid black;
+    }
+
+    .destaque{
+      background-color: greenyellow;
+    }
+    .col-group{
+      background-color: aquamarine;
+    }
+  </style>
 </head>
 <body>
-  
+  <h1>Execício com Tabelas</h1>
+
+  <table>
+    <colgroup>
+    <col class="col-group" span="3">
+    <col class="destaque" id="col-prof">
+    </colgroup>
+    <caption>Cadastro</caption>
+    <tr>
+      <th scope="col">nome</th>
+      <th scope="col">sexo</th>
+      <th scope="col">idade</th>
+      <th scope="col">profissão</th>
+    </tr>
+    <tr>
+      <td>ana maria</td>
+      <td>f</td>
+      <td>25</td>
+      <td>jornalista</td>
+    </tr>
+    <tr>
+      <td>Larissa</td>
+      <td>f</td>
+      <td>20</td>
+      <td>Infermeira</td>
+    </tr>
+    <tr>
+      <td>josé maria</td>
+      <td>m</td>
+      <td>32</td>
+      <td>Carteiro</td>
+    </tr>
+    <tr>
+      <td>pedro maria</td>
+      <td>m</td>
+      <td>19</td>
+      <td>Atentende</td>
+    </tr>
+  </table>
 </body>
 </html>
