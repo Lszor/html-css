@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabelas</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      border: 1px solid black;
+    }
+
+    th {
+      color: white;
+      text-transform: capitalize;
+      background-color: grey;
+    }
+  </style>
+</head>
+
+<body>
+  <table>
+    <thead>
+      <th scope="col">grupo</th>
+      <th scope="col">nomes</th>
+      <th scope="colgroup" colspan="3">filmes</th>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="rowgroup" rowspan="3">mulheres</th>
+        <td>Ana Maria</td>
+        <td>Alien</td>
+        <td>Rambo</td>
+        <td>Soul</td>
+      </tr>
+      <tr>
+        <td>Ana Santos</td>
+        <td>ppp</td>
+        <td>ppp</td>
+        <td>ppp</td>
+      </tr>
+      <tr>
+        <td>Ana Maria Santos</td>
+        <td>uuu</td>
+        <td>uuu</td>
+        <td>uuu</td>
+      </tr>
+
+      <tr>
+        <th scope="rowgroup" rowspan="3">homens</th>
+        <td>Jose Carlos Santos</td>
+        <td>iii</td>
+        <td>iii</td>
+        <td>iii</td>
+      </tr>
+      <tr>
+        <td>Jose Santos</td>
+        <td>ooo</td>
+        <td>ooo</td>
+        <td>ooo</td>
+      </tr>
+      <tr>
+        <td>Jose Carlos</td>
+        <td>ttt</td>
+        <td>ttt</td>
+        <td>ttt</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>
