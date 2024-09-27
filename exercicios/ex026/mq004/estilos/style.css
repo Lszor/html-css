@@ -27,7 +27,8 @@ main {
   border-radius: 10px;
   box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.363);
 }
-h1{
+
+h1 {
   text-align: center;
   font-size: 2em;
   color: white;
@@ -39,9 +40,7 @@ img {
   margin: auto;
 }
 
-img#tablet,
-#print,
-#pc,
-#tv {
-  display: none;
-}
+img#tablet { display: none; }
+img#print { display: none; }
+img#pc { display: none; }
+img#tv { display: none; }
