@@ -22,21 +22,19 @@ header>h1 {
   padding: 10px;
 }
 
-.material-symbols-outlined {
-  font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24
+.nav-bar {
+  background-color: rgba(0, 0, 0, 0.788);
+  display: block;
 }
 
 #menu-icon {
   padding: 5px;
-  text-align: center;
-  width: 100vw;
-  background-color: black;
+  text-align: left;
+  
   color: white;
   cursor: pointer;
+  display: inline-block;
+  user-select: none;
 }
 
 #menu-icon:hover {
@@ -44,33 +42,24 @@ header>h1 {
   background-color: white;
 }
 
-header>menu {
-  display: none;
+#itens.open {
+  max-height: 300px !important;
 }
 
-@keyframes showMenuItens {
-  0% {
-    max-height: 0;
-    width: 100vw;
-    opacity: 0;
-  }
-
-  100% {
-    max-height: 400px;
-    width: 100vw;
-    opacity: 1;
-  }
+#itens {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
 }
 
-.animated {
-  animation: ShowMenuItens 0.3s ease-in-out;
-}
 
-menu ul {
+
+#itens ul {
   list-style-type: none;
+  background-color: rgba(0, 0, 0, 0.788);
 }
 
-menu li>a {
+#itens li>a {
   display: block;
   color: white;
   text-decoration: none;
@@ -78,11 +67,11 @@ menu li>a {
   padding: 7px;
   text-align: center;
   border-top: 1px solid rgba(255, 255, 255, 0.808);
-  background-color: rgb(39, 39, 39);
+  background-color: rgba(56, 56, 56, 0.692);
 }
 
-menu li>a:hover {
-  background-color: rgba(56, 56, 56, 0.692);
+#itens li>a:hover {
+  background-color: rgba(85, 85, 85, 0.541);
 }
 
 main {
