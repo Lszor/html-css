@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@media only screen and (max-width: 768px) {
+  header {
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h1{
+    flex: 1
+  }
+
+  nav {
+    flex-flow: column wrap;
+    align-content: stretch;
+    text-align: center;
+    width: 100vw;
+    padding: 0 10px;
+  }
+}

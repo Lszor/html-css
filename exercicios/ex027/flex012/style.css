@@ -38,7 +38,7 @@ h1 {
   font-family: var(--font-heading);
   font-size: 3em;
   border: 1px dotted black;
-  flex: 0 0 300px;
+  flex: 0 0 285px;
 }
 
 nav {
